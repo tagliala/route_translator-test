@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+article = Article.create(title: 'English Title', slug: 'english-title')
+
+I18n.with_locale(:it) do
+  article.update_attributes title: 'Italian Title', slug: 'italian-title'
+end

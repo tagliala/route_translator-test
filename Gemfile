@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 gem 'route_translator'
 
+gem 'globalize'
+gem 'friendly_id'
+gem 'friendly_id-globalize'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
