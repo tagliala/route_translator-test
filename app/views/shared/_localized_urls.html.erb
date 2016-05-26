@@ -1,6 +1,6 @@
 <dl>
   <% I18n.available_locales.each do |locale| %>
     <dt><%= locale.to_s %></dt>
-    <dd><%= link_to url_for(only_path: true, locale: locale.to_s), url_for(only_path: true, locale: locale.to_s) %></dd>
+    <dd><%= link_to localized_url_for.call(locale), localized_url_for.call(locale) %></dd>
   <% end %>
 </dl>
